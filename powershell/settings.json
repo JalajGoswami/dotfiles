@@ -1,0 +1,236 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "unbound",
+            "keys": "f11"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+right"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+left"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "id": "User.moveFocus.F747588A",
+            "keys": "alt+j"
+        },
+        {
+            "command": "toggleFullscreen",
+            "id": "User.toggleFullscreen",
+            "keys": "ctrl+f11"
+        },
+        {
+            "command": "closePane",
+            "id": "User.closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "id": "User.moveFocus.6CD791B",
+            "keys": "alt+k"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "id": "User.moveFocus.87C324ED",
+            "keys": "alt+l"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "id": "User.moveFocus.2A0DA8E0",
+            "keys": "alt+h"
+        }
+    ],
+    "alwaysOnTop": false,
+    "confirmCloseAllTabs": false,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "experimental.detectURLs": true,
+    "experimental.useBackgroundImageForWindow": false,
+    "initialCols": 90,
+    "initialRows": 20,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImage": "C:\\Users\\Jalaj\\Pictures\\grey-goku-outline.png",
+            "backgroundImageAlignment": "top",
+            "backgroundImageOpacity": 0.6,
+            "backgroundImageStretchMode": "uniformToFill",
+            "colorScheme": "Catppuccin Mocha",
+            "cursorShape": "emptyBox",
+            "font": 
+            {
+                "face": "JetBrainsMono Nerd Font",
+                "size": 13.5,
+                "weight": "medium"
+            },
+            "opacity": 80,
+            "padding": "5",
+            "startingDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\jalaj\\work_dir_jalaj",
+            "tabTitle": null,
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "commandline": "C:\\Users\\Jalaj\\AppData\\Local\\Programs\\Git\\git-bash.exe",
+                "guid": "{8c338ba5-f78c-4125-aebe-153c7c68237f}",
+                "hidden": false,
+                "name": "Git Bash"
+            }
+        ]
+    },
+    "rendering.graphicsAPI": "direct3d11",
+    "schemes": 
+    [
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
+        }
+    ],
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Mocha",
+            "tab": 
+            {
+                "background": "#1E1E2EFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#181825FF",
+                "unfocusedBackground": "#11111BFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ]
+}
