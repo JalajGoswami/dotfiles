@@ -22,15 +22,15 @@ return {
       position = "left",
       size = 40,
     },
-    -- {
-    --   elements = {
-    --     {
-    --       id = "console",
-    --       size = 1,
-    --     },
-    --   },
-    --   position = "bottom",
-    --   size = 8,
-    -- },
+    {
+      elements = {
+        {
+          id = "repl",
+          size = 1,
+        },
+      },
+      position = "bottom",
+      size = 8,
+    },
   },
 }

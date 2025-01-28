@@ -32,21 +32,12 @@ dap.configurations.go = {
     type = "delve",
     name = "Debug test", -- configuration for debugging test files
     request = "launch",
-    mode = "debug",
+    mode = "test",
     program = function()
-      return vim.fn.input "Test package : "
+      return "${workspaceFolder}/" .. vim.fn.input("Enter path of test dir : ", "")
     end,
     args = { "-test.v" },
   },
-  -- {
-  --   type = "delve",
-  --   name = "Attach", -- configuration for debugging test files
-  --   request = "attach",
-  --   processId = require("dap.utils").pick_process,
-  --   program = "${workspaceFolder}",
-  --   host = "127.0.0.1",
-  --   port = "38697",
-  -- },
 }
 
 -- Node debugger setup
@@ -71,10 +62,18 @@ for _, language in ipairs { "typescript", "javascript" } do
     },
     {
       type = "pwa-node",
-      request = "attach",
-      name = "Attach",
-      processId = require("dap.utils").pick_process,
-      cwd = "${workspaceFolder}",
+      request = "launch",
+      name = "Run npm script",
+      cwd = vim.fn.getcwd(),
+      runtimeExecutable = "npm",
+      runtimeArgs = { "run-script" },
+      args = function()
+        return { vim.fn.input("Enter script name: ", "dev") }
+      end,
+      env = {
+        NODE_ENV = "development",
+      },
+      console = "integratedTerminal",
       skipFiles = { "<node_internals>/**" },
     },
   }
